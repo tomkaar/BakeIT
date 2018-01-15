@@ -1,0 +1,6 @@
+*.sass-cache/
+assets/css/css/
+*.css.map
+*.css
+.DS_Store
+*.config
