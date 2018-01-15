@@ -1,0 +1,39 @@
+.row{
+  width: 100%;
+  overflow: auto;
+
+  &:after{
+    clear: both;
+  }
+}
+
+@for $i from 1 through 12 {
+	.col-s-#{$i} {
+    float: left;
+		width: percentage(1 / $i);
+    flex-basis: percentage(1 / $i);
+    color: black;
+	}
+}
+
+@for $i from 1 through 12 {
+  @include tablet{
+    .col-m-#{$i} {
+      float: left;
+  		width: percentage(1 / $i);
+      flex-basis: percentage(1 / $i);
+      color: black;
+  	}
+  }
+}
+
+@for $i from 1 through 12 {
+  @include desktop{
+    .col-m-#{$i} {
+      float: left;
+  		width: percentage(1 / $i);
+      flex-basis: percentage(1 / $i);
+      color: black;
+  	}
+  }
+}

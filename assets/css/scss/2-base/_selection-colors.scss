@@ -1,0 +1,23 @@
+::selection{
+  background: $selection-color;
+  color: $selection-color2;
+}
+::-moz-selection{
+  background: $selection-color;
+  color: $selection-color2;
+}
+img::selection{
+  background: transparent;
+  color: $selection-color2;
+}
+img::-moz-selection{
+  background: transparent;
+  color: $selection-color2;
+}
+body{
+  -webkit-tap-highlight-color: $selection-color;
+  color: $selection-color2;
+}
+
+
+// FFF498
