@@ -1,5 +1,44 @@
 .wrapper {
+  position: relative;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+}
+.wrapper-small{
+  width: 100%;
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+@mixin background-cover($img) {
+  background:url($img);
+  background-position: center;
+  background-size:cover;
+
+}
+
+.btn {
+  @include font-nav($color-white);
+  display:block;
+  border: 1px solid $color-white;
+  border-radius:4px;
+  text-decoration: none;
+  padding:$p-0_5 $p-1_5;
+  width: 200px;
+
+  transition: 0.2s all ease-in-out;
+
+  &:hover{
+    background: $color-white;
+    color: $color-dark-grey;
+  }
+}
+
+.hero-bg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0 , 0.3);
 }

@@ -29,9 +29,16 @@
   line-height: 80px;
 }
 
-@mixin font-nav {
+@mixin font-nav($color: $color-black) {
   font-family: "Open sans", sans-serif;
   font-size: $font-title-small;
-  color: $color-light-grey;
+  color: $color;
   line-height: 32px;
+}
+
+@mixin font-title-extreme($color: $color-black) {
+  font-family: "Oswald", sans-serif;
+  font-size: $font-title-extreme;
+  color: $color;
+  line-height: 180px;
 }

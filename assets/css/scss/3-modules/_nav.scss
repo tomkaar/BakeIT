@@ -121,3 +121,29 @@
     top: 0;
   }
 }
+
+@media (min-width: 769px) {
+  .nav-menu {
+    position: static;
+    top: 0;
+    width: auto;
+    height: auto;
+    float: right;
+    padding: 15px 15px 0 0;
+    ul{
+      transform: translateY(0);
+      width: auto;
+      top: 0;
+      li{
+        width: auto;
+        display: inline-block;
+        padding: 0 $p-0_5;
+      }
+    }
+
+
+  }
+  .nav-ham {
+    display: none;
+  }
+}
