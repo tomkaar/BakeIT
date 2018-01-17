@@ -1,0 +1,62 @@
+.web-hero {
+  @include background-cover("../../../assets/img/hero/web/web.jpg");
+
+  h2 {
+    @include font-title($color-white);
+    line-height: 80px;
+    position: relative;
+
+    padding: $p-1 0 $p-2_5 0;
+
+  }
+}
+
+.web-section-title {
+	text-align: center;
+	background:$color-green;
+	width:100%;
+	position:relative;
+	
+	h2 {
+		@include font-title($color-white);
+		line-height: 2.5rem;
+		padding: 2rem 0 1rem 0;
+	}
+	p {
+		@include font-para($color-white);
+		padding: 0 0 2rem 0;
+	}
+}
+
+.web-section-item {
+	.web-section-img {
+		.web-stairs {
+			width:100%;
+			height:auto;
+			padding:$p-2_5 $p-1_5 $p-0_5 $p-1_5 ;
+		}
+	}
+	
+	.web-section-text {
+		height:auto;
+		padding:0 $p-0_5 $p-0_5 $p-0_5;
+		background:$color-white;
+		h2 {
+			@include font-title
+		}
+		p {
+			@include font-para
+		}
+		
+	}
+}
+
+.web-reverse {
+	@media (min-width:$tablet)
+		{
+			display:flex;
+			flex-direction:row-reverse;
+			
+		}
+}
+
