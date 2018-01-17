@@ -52,10 +52,10 @@
 }
 
 .add-padding {
-  padding: $p-2 0;
+  padding: $p-2 0 $p-4 0;
 }
+
 .contact-form {
-  background-color: blue;
   width: 100%;
   height: auto;
 
@@ -63,6 +63,7 @@
     font-family: "oswald", sans-serif;
     font-size: $font-title;
     color: $color-black;
+    padding: $p-2 0;
     width: 100%;
     text-align: center;
   }
@@ -79,7 +80,7 @@
     display: block;
     width: 100%;
     text-align: center;
-    padding: $p-0_5;
+    padding: $p-1_5 0 $p-0_5 0;
 
   }
   input {
@@ -87,7 +88,9 @@
     width: 90%;
     margin: 0 auto;
     max-width: 760px;
-
+    padding: $p-0_5;
+    border-radius: 5px;
+    border: 1px solid $color-black;
   }
   textarea {
     display: block;
@@ -95,5 +98,22 @@
     max-width: 600px;
     margin: 0 auto;
     height: 8rem;
+    border-radius: 5px;
+    border: 1px solid $color-black;
   }
+}
+
+input[type=button], input[type=submit], input[type=reset]{
+    background-color: $color-red;
+    border: none;
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    margin: $m-1 auto;
+    padding: $p-0_5;
+    font-family: "oswald", sans-serif;
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
 }
