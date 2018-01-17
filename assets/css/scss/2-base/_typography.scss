@@ -1,0 +1,44 @@
+@mixin font-para($color: $color-dark-grey) {
+  font-family: "Open Sans", sans-serif;
+  font-size: $font-para;
+  color: $color;
+  line-height: 24px;
+  @include tablet{
+		line-height: 32px;
+	}
+}
+
+@mixin font-title-small($color: $color-black) {
+  font-family: "Oswald", sans-serif;
+  font-size: $font-title-small;
+  color: $color;
+  line-height: 32px;
+}
+
+@mixin font-title($color: $color-black) {
+  font-family: "Oswald", sans-serif;
+  font-size: $font-title;
+  color: $color;
+  line-height: 80px;
+}
+
+@mixin font-title-big($color: $color-black) {
+  font-family: "Oswald", sans-serif;
+  font-size: $font-title-big;
+  color: $color;
+  line-height: 80px;
+}
+
+@mixin font-nav($color: $color-black) {
+  font-family: "Open sans", sans-serif;
+  font-size: $font-title-small;
+  color: $color;
+  line-height: 32px;
+}
+
+@mixin font-title-extreme($color: $color-black) {
+  font-family: "Oswald", sans-serif;
+  font-size: $font-title-extreme;
+  color: $color;
+  line-height: 180px;
+}
