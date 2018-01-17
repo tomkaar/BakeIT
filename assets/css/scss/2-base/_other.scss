@@ -42,3 +42,19 @@
   height: 100%;
   background: rgba(0, 0, 0 , 0.3);
 }
+
+
+
+
+.section-title{
+  padding: $p-3 $p-1;
+  text-align: center;
+
+  h2{
+    @include font-title($color-dark-grey);
+  }
+  p{
+    @include font-para($color-light-grey);
+    font-size: 16px;
+  }
+}

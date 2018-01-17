@@ -491,6 +491,32 @@ html, body {
   background: rgba(0, 0, 0, 0.3);
 }
 
+.section-title {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.section-title h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 2.5rem;
+  color: #333333;
+  line-height: 80px;
+}
+
+.section-title p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.8125rem;
+  color: #565656;
+  line-height: 24px;
+  font-size: 16px;
+}
+
+@media (min-width: 768px) {
+  .section-title p {
+    line-height: 32px;
+  }
+}
+
 ::-moz-selection {
   background: #333333;
   color: #FFFFFF;

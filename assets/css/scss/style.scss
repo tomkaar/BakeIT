@@ -6,9 +6,9 @@
 @import '1-tools/vars';
 
 // 2-base
+@import "2-base/media-queries";
 @import "2-base/typography";
 @import "2-base/other";
-@import "2-base/media-queries";
 @import "2-base/selection-colors";
 
 // 3-modules

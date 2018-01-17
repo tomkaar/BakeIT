@@ -2,5 +2,5 @@
 assets/css/css/
 *.css.map
 *.css
-.DS_Store
+*.DS_Store
 *.config
