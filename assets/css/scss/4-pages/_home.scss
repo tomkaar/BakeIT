@@ -97,6 +97,10 @@
 .section-strengths{
   background: $color-red;
 
+  .str{
+    margin: $m-4 0;
+  }
+
   .str-item{
     margin: 0 0 $m-5 0;
   }
@@ -126,6 +130,10 @@
   }
 
 }
+
+
+
+// Cases
 
 
 
