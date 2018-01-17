@@ -16,3 +16,70 @@
     position: relative;
   }
 }
+
+.contact-social {
+  @include flex-center(row);
+
+  div {
+    width: 5rem;
+    padding: $p-1;
+    cursor: pointer;
+
+    img {
+      width: 100%;
+      cursor: pointer;
+    }
+  }
+}
+
+.adress {
+  width: 100%;
+  height: auto;
+
+  div {
+    background-color: $color-red;
+    padding: $p-1 $p-0_5 $p-2 $p-0_5;
+  }
+  h2{
+    @include font-title($color-white);
+    text-align: center;
+  }
+  p{
+    @include font-para($color-white);
+    font-size: 16px;
+    text-align: center;
+  }
+}
+
+.contact-form {
+  background-color: blue;
+  width: 100%;
+  height: auto;
+
+  h2 {
+    font-family: "oswald", sans-serif;
+    font-size: $font-title;
+    color: $color-black;
+    width: 100%;
+    text-align: center;
+  }
+  label {
+    font-family: "oswald", sans-serif;
+    font-size: $font-title-small;
+    color: $color-black;
+    display: block;
+  }
+  input {
+    display: block;
+    width: 70%;
+  }
+  textarea {
+    width: 70%;
+    max-width: 600px;
+    height: 8rem;
+  }
+}
+
+.form-padding {
+  padding: $p-1;
+}
