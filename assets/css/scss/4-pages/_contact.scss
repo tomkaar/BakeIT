@@ -51,6 +51,9 @@
   }
 }
 
+.add-padding {
+  padding: $p-2 0;
+}
 .contact-form {
   background-color: blue;
   width: 100%;
@@ -63,23 +66,34 @@
     width: 100%;
     text-align: center;
   }
+
+  form {
+    width: 80%;
+    margin: auto;
+  }
+
   label {
     font-family: "oswald", sans-serif;
     font-size: $font-title-small;
     color: $color-black;
     display: block;
+    width: 100%;
+    text-align: center;
+    padding: $p-0_5;
+
   }
   input {
     display: block;
-    width: 70%;
+    width: 90%;
+    margin: 0 auto;
+    max-width: 760px;
+
   }
   textarea {
-    width: 70%;
+    display: block;
+    width: 100%;
     max-width: 600px;
+    margin: 0 auto;
     height: 8rem;
   }
-}
-
-.form-padding {
-  padding: $p-1;
 }
