@@ -1,0 +1,18 @@
+.contact-hero {
+  @include background-cover("../../../assets/img/hero/shard.jpg");
+  padding: 3.75rem + $p-4 $p-1_5 $p-5 $p-1_5;
+  position: relative;
+  text-align: left;
+
+  h2 {
+    @include font-title($color-white);
+    position: relative;
+    padding: $p-1 0 $p-2 0;
+  }
+
+  h3 {
+    @include font-title($color-white);
+    line-height: 40px;
+    position: relative;
+  }
+}
