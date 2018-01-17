@@ -19,7 +19,14 @@
   font-family: "Oswald", sans-serif;
   font-size: $font-title;
   color: $color;
-  line-height: 80px;
+  line-height: 40px;
+}
+
+@mixin font-title-medium($color: $color-black) {
+  font-family: "Oswald", sans-serif;
+  font-size: $font-title-medium;
+  color: $color;
+  line-height: 48px;
 }
 
 @mixin font-title-big($color: $color-black) {
