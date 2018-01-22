@@ -141,6 +141,15 @@
   img{
     float: left;
     width: 50%;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    transition: 0.2s all ease-in-out;
+    cursor: pointer;
+
+    &:hover{
+      filter: grayscale(0%);
+      -webkit-filter: grayscale(0%);
+    }
   }
 }
 
