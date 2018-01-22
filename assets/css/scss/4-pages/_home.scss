@@ -1,26 +1,21 @@
-
-
-.img-100{
-  width: 100%;
-}
 // Services
 .section-h-services, .section-team{
 
   .item-text{
-    padding: $p-3 $p-1;
+    padding: $p-2 $p-1;
     text-align: center;
 
     h3{
-      @include font-title();
+      @include font-title-medium();
+      font-weight: 100;
+      letter-spacing: 1px;
       line-height: 40px;
     }
     p{
       @include font-para();
-      padding: $p-2 0 $p-1 0;
+      padding: $p-1 0 $p-1 0;
     }
-    p.work{
-      padding: $p-1 0 0 0;
-    }
+    p.work{ padding: 0; }
   }
 }
 
@@ -72,6 +67,7 @@
 .slider-btns{
   @include flex-center(row);
   width: 100%;
+  text-align: center;
 
   button{
     margin: 0 $m-0_5;
@@ -103,7 +99,10 @@
 
   .str-item{
     margin: 0 0 $m-5 0;
+    padding: 0 $p-2;
   }
+
+  .str-item-text{ text-align: center; }
   .str-item-logo{
     position: relative;
     width: 100%;
@@ -112,8 +111,7 @@
       position: relative;
       margin: $m-1 0 0 0;
       left: 50%;
-      width: 100px;
-      max-width: 33px;
+      width: 33px;
       transform: translateX(-50%);
     }
   }
@@ -122,6 +120,8 @@
 
     h4{
       @include font-title-medium($color-white);
+      font-weight: 100;
+      letter-spacing: 1px;
       margin-bottom: $p-1;
     }
     p{
@@ -134,7 +134,15 @@
 
 
 // Cases
+.section-h-cases{
+  width: 100%;
+  overflow: auto;
 
+  img{
+    float: left;
+    width: 50%;
+  }
+}
 
 
 
@@ -152,6 +160,10 @@
   }
   .item-text{
     text-align: left !important;
+  }
+
+  .section-strengths .str-item-text{
+    text-align: left;
   }
 
 
@@ -174,6 +186,8 @@
       }
     }
   }
+
+  .section-h-cases img{ width: 25%; }
 }
 
 

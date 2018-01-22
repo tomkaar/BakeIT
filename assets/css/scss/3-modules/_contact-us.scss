@@ -5,6 +5,7 @@
   padding: $p-1_5 $p-1_5 $p-3_5 $p-1_5;
   text-align: center;
 
+
   h3 {
     @include font-title($color-white);
     position: relative;
@@ -13,9 +14,12 @@
     letter-spacing: 1.5px;
   }
 
-  div{
+  .hero-bg{
     @include flex-center(row);
     position: relative;
+  }
+  .btn{
+    margin: 0 auto;
   }
 }
 

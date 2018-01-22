@@ -23,6 +23,8 @@
     @include flex-center(row);
     position: relative;
     a {
+      margin: 0 auto;
+      display: inline-block;
       margin: $m-1;
     }
   }

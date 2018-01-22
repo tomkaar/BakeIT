@@ -15,11 +15,11 @@
   h1 {
     @include font-nav();
     float: left;
-    padding: 5px 0 0 1rem;
+    padding: 3px 0 0 1rem;
   }
   img{
     position: relative;
-    top: 12px;
+    top: 10px;
     float: left;
     width: 2.5rem;
   }

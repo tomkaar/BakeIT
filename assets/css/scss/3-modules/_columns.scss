@@ -19,6 +19,7 @@
 @for $i from 1 through 12 {
 	.col-s-#{$i} {
 		width: percentage(1 / $i);
+    max-width: percentage(1 / $i);
     flex-basis: percentage(1 / $i);
 	}
 }
@@ -43,6 +44,7 @@
   @for $i from 1 through 12 {
     .col-m-#{$i} {
       width: percentage(1 / $i);
+      max-width: percentage(1 / $i);
       flex-basis: percentage(1 / $i);
     }
   }
@@ -53,6 +55,7 @@
   @for $i from 1 through 12 {
     .col-l-#{$i} {
   		width: percentage(1 / $i);
+      max-width: percentage(1 / $i);
       flex-basis: percentage(1 / $i);
   	}
   }

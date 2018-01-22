@@ -30,9 +30,11 @@
 
 .footer-social{
   @include flex-center(row);
+  text-align: center;
   padding: $p-1 $p-0_5;
 
-  div{
+  .footer-social-img{
+    display: inline-block;
     width: 50px;
     padding: $p-0_5;
     cursor: pointer;

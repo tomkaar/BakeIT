@@ -1,16 +1,19 @@
 .wrapper {
   position: relative;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1200px !important;
   margin: 0 auto;
 }
 .wrapper-small{
   width: 100%;
-  max-width: 768px;
+  max-width: 768px !important;
   margin: 0 auto;
 }
 
 .img-100{ width: 100%; }
+.text-center{ text-align: center; }
+.text-left{ text-align: left; }
+.text-right{ text-align: right; }
 
 @mixin background-cover($img) {
   background:url($img);
@@ -20,7 +23,7 @@
 
 .btn {
   @include font-nav($color-white);
-  display:block;
+  display: block;
   border: 1px solid $color-white;
   border-radius:4px;
   text-decoration: none;
