@@ -59,6 +59,11 @@
   }
 }
 
+.adress-pad {
+  @include rem(padding, $v2 0 $v4 0);
+  width: 100%;
+}
+
 .add-padding {
   @include rem(padding, $v2 0 $v4 0);
 }
