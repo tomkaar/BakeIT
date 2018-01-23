@@ -24,11 +24,11 @@
 
 .btn {
   @include font-nav($color-white);
+  @include rem(padding, $v0_5 $v1_5);
   display: block;
   border: 1px solid $color-white;
   border-radius:4px;
   text-decoration: none;
-  padding:$p-0_5 $p-1_5;
   width: 200px;
 
   transition: 0.2s all ease-in-out;
@@ -52,7 +52,7 @@
 
 
 .section-title{
-  padding: $p-3 $p-1;
+  @include rem(padding, $v3 $v1);
   text-align: center;
 
   h2{
