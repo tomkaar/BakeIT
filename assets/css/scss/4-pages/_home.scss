@@ -2,7 +2,7 @@
 .section-h-services, .section-team{
 
   .item-text{
-    padding: $p-2 $p-1;
+    @include rem(padding, $v2 $v1);
     text-align: center;
 
     h3{
@@ -13,7 +13,7 @@
     }
     p{
       @include font-para();
-      padding: $p-1 0 $p-1 0;
+      @include rem(padding, $v1 0);
     }
     p.work{ padding: 0; }
   }
@@ -29,11 +29,11 @@
 // Raitings
 .section-raitings{
   background: $color-green;
-  padding: 0 $p-1 $p-3 $p-1;
+  @include rem(padding, 0 $v1 $v3 $v1);
 }
 
 .slider-person{
-  padding: $p-1 0;
+  @include rem(padding, 0 $v1);
 
   .slider-img{
     position: relative;
@@ -49,7 +49,7 @@
   }
 
   .slider-text{
-    padding: 0 0 $p-3 0;
+    @include rem(padding, 0 0 $v3 0);
 
     h3{
       @include font-title-small($color-white);
@@ -70,7 +70,7 @@
   text-align: center;
 
   button{
-    margin: 0 $m-0_5;
+    @include rem(margin, 0 $v0_5);
     width: 10px;
     height: 10px;
     background: transparent;
@@ -94,13 +94,12 @@
   background: $color-red;
 
   .str{
-    margin: $m-2 0 $m-2 0;
-    @include rem(margin, 2.74+$v2 0);
+    @include rem(margin, $v2 0);
   }
 
   .str-item{
-    margin: 0 0 $m-5 0;
-    padding: 0 $p-2;
+    @include rem(margin, 0 0 $v5 0);
+    @include rem(padding, 0 $v2);
   }
 
   .str-item-text{ text-align: center; }
@@ -110,7 +109,7 @@
 
     svg{
       position: relative;
-      margin: $m-1 0 0 0;
+      @include rem(margin, $v1 0 0 0);
       left: 50%;
       width: 33px;
       transform: translateX(-50%);
@@ -123,7 +122,7 @@
       @include font-title-medium($color-white);
       font-weight: 100;
       letter-spacing: 1px;
-      margin-bottom: $p-1;
+      @include rem(margin-bottom, $v1);
     }
     p{
       @include font-para($color-white);
@@ -166,7 +165,7 @@
 
 @media (min-width: $tablet) {
   .item{
-    padding: $p-2;
+    @include rem(padding, $v2);
   }
   .item-text{
     text-align: left !important;
@@ -204,7 +203,7 @@
 
 @media (min-width: $desktop) {
   .item{
-    padding: $p-2;
+    @include rem(padding, $v2);
   }
   .item-text{
     text-align: center !important;

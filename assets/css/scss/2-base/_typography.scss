@@ -1,6 +1,6 @@
 @mixin font-para($color: $color-dark-grey) {
   font-family: "Open Sans", sans-serif;
-  font-size: $font-para;
+  @include rem(font-size, $font-para);
   color: $color;
   line-height: 24px;
   @include tablet{
@@ -10,35 +10,35 @@
 
 @mixin font-nav($color: $color-black) {
   font-family: "Open sans", sans-serif;
-  font-size: $font-title-small;
+  @include rem(font-size, $font-title-small);
   color: $color;
   line-height: 32px;
 }
 
 @mixin font-title-small($color: $color-black) {
   font-family: "Oswald", sans-serif;
-  font-size: $font-title-small;
+  @include rem(font-size, $font-title-small);
   color: $color;
   line-height: 32px;
 }
 
 @mixin font-title($color: $color-black) {
   font-family: "Oswald", sans-serif;
-  font-size: $font-title;
+  @include rem(font-size, $font-title);
   color: $color;
   line-height: 40px;
 }
 
 @mixin font-title-medium($color: $color-black) {
   font-family: "Oswald", sans-serif;
-  font-size: $font-title-medium;
+  @include rem(font-size, $font-title-medium);
   color: $color;
   line-height: 48px;
 }
 
 @mixin font-title-big($color: $color-black) {
   font-family: "Oswald", sans-serif;
-  font-size: $font-title-big;
+  @include rem(font-size, $font-title-big);
   color: $color;
   line-height: 80px;
 }
@@ -46,6 +46,7 @@
 @mixin font-title-extreme($color: $color-black) {
   font-family: "Oswald", sans-serif;
   font-size: $font-title-extreme;
+  @include rem(font-size, $font-title-extreme);
   color: $color;
   line-height: 180px;
 }

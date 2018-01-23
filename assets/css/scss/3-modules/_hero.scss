@@ -1,6 +1,6 @@
 .hero {
   @include background-cover("../../../assets/img/hero/home-2000.jpg");
-  padding: 3.75rem + $p-4 $p-1_5 $p-5 $p-1_5;
+  @include rem(padding, $nav-height+$v4 $v1_5 $v5 $v1_5);
   position: relative;
   text-align: center;
 
@@ -9,7 +9,7 @@
     line-height: 80px;
     position: relative;
 
-    padding: $p-1 0 $p-2_5 0;
+    @include rem(padding, $v1 0 $v2_5 0);
 
   }
 
@@ -25,7 +25,7 @@
     a {
       margin: 0 auto;
       display: inline-block;
-      margin: $m-1;
+      @include rem(margin, $v1);
     }
   }
 }

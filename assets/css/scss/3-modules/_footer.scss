@@ -2,7 +2,7 @@
 
 
 .footer{
-  padding: $p-2 $p-1;
+  @include rem(padding, $v2 $v1);
   background: $color-dark-grey;
 
   ul{
@@ -31,12 +31,12 @@
 .footer-social{
   @include flex-center(row);
   text-align: center;
-  padding: $p-1 $p-0_5;
+  @include rem(padding, $v1 $v0_5);
 
   .footer-social-img{
     display: inline-block;
     width: 50px;
-    padding: $p-0_5;
+    @include rem(padding, $v0_5);
     cursor: pointer;
 
     img{ width: 100%; cursor: pointer; }
@@ -57,7 +57,7 @@
     li{
       display: inline;
       width: auto;
-      padding: $p-0_5;
+      @include rem(padding, $v0_5);
     }
   }
 }

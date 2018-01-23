@@ -24,11 +24,11 @@
 
 .btn {
   @include font-nav($color-white);
+  @include rem(padding, $v0_5 $v1_5);
   display: block;
   border: 1px solid $color-white;
   border-radius:4px;
   text-decoration: none;
-  padding:$p-0_5 $p-1_5;
   width: 200px;
 
   transition: 0.2s all ease-in-out;
@@ -52,7 +52,7 @@
 
 
 .section-title{
-  padding: $p-3 $p-1;
+  @include rem(padding, $v3 $v1);
   text-align: center;
 
   h2{
@@ -65,33 +65,4 @@
 
   &.white h2,
   &.white p{ color: $color-white; }
-}
-
-
-// rem to px mixin
-@mixin rem($property, $values){
-  $px-values: ();
-	$rem-values: ();
-
-  @if type-of($values) != 'list' {
-		$values: join((), $values);
-	}
-
-  @each $value in $values{
-    @if type-of($value) == string or $value == 0 {
-			$px-values: append($px-values, $value);
-			$rem-values: append($rem-values, $value);
-		}
-    @else if type-of($value) == number{
-      $px-values: append($px-values, ($value * $root+px));
-      $rem-values: append($rem-values, $value+rem);
-    }
-    @else {
-      $px-values: append($px-values, $value);
-			$rem-values: append($rem-values, $value);
-    }
-  }
-
-  #{$property}: $px-values;
-  #{$property}: $rem-values;
 }
