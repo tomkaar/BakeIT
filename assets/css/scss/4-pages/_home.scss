@@ -95,6 +95,7 @@
 
   .str{
     margin: $m-2 0 $m-2 0;
+    @include rem(margin, 2.74+$v2 0);
   }
 
   .str-item{

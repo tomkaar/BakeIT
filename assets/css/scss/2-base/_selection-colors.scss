@@ -8,12 +8,8 @@
 }
 img::selection{
   background: transparent;
-  color: $selection-color2;
 }
 img::-moz-selection{
   background: transparent;
-  color: $selection-color2;
 }
-body{
-  -webkit-tap-highlight-color: $selection-color;
-}
+body{ -webkit-tap-highlight-color: $selection-color; }
