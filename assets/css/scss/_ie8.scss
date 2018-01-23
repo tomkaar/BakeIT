@@ -1,6 +1,84 @@
+*:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
+.nav-ham {
+    display: none;
+}
 
+.nav-menu {
+  position: static;
+  top: 0;
+  width: auto;
+  height: auto;
+  float: right;
+  padding: 15px 15px 0 0;
+  ul{
+    transform: translateY(0);
+    width: auto;
+    top: 0;
+    li{
+      width: auto;
+      display: inline-block;
+      padding: 0 7px;
+    }
+  }
+}
 
-.nav{
-  background: orangered !important;
+.hero-bg {
+  width: 100%;
+  background-color: #000000;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+  }
+
+.row {
+  width: 100%;
+  overflow: auto;
+}
+
+.col-l-3 {
+  width: 33.33333333%;
+  float: left;
+  padding: 16px;
+}
+
+.section-strengths .col-m-2 {
+  width: 50%;
+  float: left;
+}
+.section-raitings {
+   width: 100%;
+   float: left;
+   .slider-person {
+     position: relative;
+     width: 100%;
+   }
+   img {
+     margin-left: -50px;
+   }
+}
+
+.section-contact {
+  width: 100%;
+  zoom:1;
+  overflow: auto;
+  float: left;
+}
+
+.section-h-cases img {
+  width: 25%;
+}
+
+.footer {
+  float: left;
+  ul {
+    text-align: center;
+    li {
+      display: inline-block;
+      width: auto;
+      padding: 7px;
+    }
+  }
 }
