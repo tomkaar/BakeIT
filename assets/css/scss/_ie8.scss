@@ -52,8 +52,11 @@
    width: 100%;
    float: left;
    .slider-person {
+     position: relative;
      width: 100%;
-     -ms-transform: translate(-50%, -50%);
+   }
+   img {
+     margin-left: -50px;
    }
 }
 
