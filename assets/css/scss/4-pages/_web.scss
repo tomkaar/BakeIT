@@ -5,10 +5,11 @@
   text-align: center;
 
   h2 {
-    @include font-title-big($color-white);
+    @include font-title($color-white);
     line-height: 80px;
     position: relative;
     padding: $p-1 0 $p-2_5 0;
+	
 
   }
 
@@ -35,7 +36,7 @@
   text-align: center;
 
   h2 {
-    @include font-title-big($color-white);
+    @include font-title($color-white);
     line-height: 80px;
     position: relative;
     padding: $p-1 0 $p-2_5 0;
@@ -64,7 +65,7 @@
   text-align: center;
 
   h2 {
-    @include font-title-big($color-white);
+    @include font-title($color-white);
     line-height: 80px;
     position: relative;
     padding: $p-1 0 $p-2_5 0;
@@ -106,7 +107,7 @@
 	padding:$p-2_5 0 $p-2_5 0;
 	
 	.web-skills-list{
-		padding-top: $p-3;
+		padding: $p-3 0 0 0;
 	}
 	h2 {
 		@include font-title($color-white);
@@ -151,6 +152,7 @@
 .web-section-item {
 	display:flex;
 	align-items: center;
+	justify-content: space-around;
 	.web-section-img {
 		.web-stairs {
 			width:100%;
