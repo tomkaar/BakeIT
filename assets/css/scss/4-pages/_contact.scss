@@ -1,13 +1,13 @@
 .contact-hero {
   @include background-cover("../../../assets/img/hero/shard.jpg");
-  padding: 3.75rem + $p-4 $p-1_5 $p-5 $p-1_5;
+  @include rem(padding, 3.75+$v4 $v1_5 $v5 $v1_5);
   position: relative;
   text-align: left;
 
   h2 {
     @include font-title($color-white);
+    @include rem(padding, $v1 0 $v2 0);
     position: relative;
-    padding: $p-1 0 $p-2 0;
   }
 
   h3 {
@@ -21,8 +21,8 @@
   @include flex-center(row);
 
   div {
-    width: 5rem;
-    padding: $p-1;
+    @include rem(width, $v5)
+    @include rem(padding, $v1)
     cursor: pointer;
 
     img {
@@ -37,8 +37,8 @@
   height: auto;
 
   div {
+    @include rem(padding, $v1_5 $v0_5 $v2 $v0_5)
     background-color: $color-red;
-    padding: $p-1 $p-0_5 $p-2 $p-0_5;
   }
   h2{
     @include font-title($color-white);
@@ -52,7 +52,7 @@
 }
 
 .add-padding {
-  padding: $p-2 0 $p-4 0;
+  @include rem(padding, $v2 0 $v4 0);
 }
 
 .contact-form {
@@ -60,10 +60,8 @@
   height: auto;
 
   h2 {
-    font-family: "oswald", sans-serif;
-    font-size: $font-title;
-    color: $color-black;
-    padding: $p-2 0;
+    @include font-title($color-black);
+    @include rem(padding, $v2 0);
     width: 100%;
     text-align: center;
   }
@@ -74,21 +72,19 @@
   }
 
   label {
-    font-family: "oswald", sans-serif;
-    font-size: $font-title-small;
-    color: $color-black;
+    @include font-title-small($color-black);
+    @include rem(padding, $v1_5 0 $v0_5 0);
     display: block;
     width: 100%;
     text-align: center;
-    padding: $p-1_5 0 $p-0_5 0;
 
   }
   input {
+    @include rem(padding, $v0_5);
     display: block;
     width: 90%;
     margin: 0 auto;
     max-width: 760px;
-    padding: $p-0_5;
     border-radius: 5px;
     border: 1px solid $color-black;
   }
@@ -98,19 +94,20 @@
     max-width: 600px;
     margin: 0 auto;
     height: 8rem;
+    height: 128px;
     border-radius: 5px;
     border: 1px solid $color-black;
   }
 }
 
 input[type=button], input[type=submit], input[type=reset]{
+    @include rem(margin, $v1 auto);
+    @include rem(padding, $v0_5);
     background-color: $color-red;
     border: none;
     display: block;
     width: 100%;
     max-width: 300px;
-    margin: $m-1 auto;
-    padding: $p-0_5;
     font-family: "oswald", sans-serif;
     color: white;
     border-radius: 4px;
