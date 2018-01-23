@@ -1,3 +1,94 @@
+.web-hero {
+  @include background-cover("../../../assets/img/hero/web/web-2000.jpg");
+  padding: 3.75rem + $p-4 $p-2_5 $p-5 $p-1_5;
+  position: relative;
+  text-align: center;
+
+  h2 {
+    @include font-title-big($color-white);
+    line-height: 80px;
+    position: relative;
+    padding: $p-1 0 $p-2_5 0;
+
+  }
+
+  .web-hero-wrapper{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1100px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .web-hero {
+    h2 {
+      @include font-title-extreme($color-white);
+    }
+  }
+
+}
+
+.branding-hero {
+  @include background-cover("../../../assets/img/hero/branding/branding-2000.jpg");
+  padding: 3.75rem + $p-4 $p-2_5 $p-5 $p-1_5;
+  position: relative;
+  text-align: center;
+
+  h2 {
+    @include font-title-big($color-white);
+    line-height: 80px;
+    position: relative;
+    padding: $p-1 0 $p-2_5 0;
+  }
+
+  .branding-hero-wrapper{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1100px;
+  }
+}
+
+@media (min-width:$desktop) {
+  .branding-hero {
+    h2 {
+      @include font-title-extreme($color-white);
+    }
+  }
+
+}
+
+.marketing-hero {
+  @include background-cover("../../../assets/img/hero/marketing/marketing-2000.jpg");
+  padding: 3.75rem + $p-4 $p-2_5 $p-5 $p-1_5;
+  position: relative;
+  text-align: center;
+
+  h2 {
+    @include font-title-big($color-white);
+    line-height: 80px;
+    position: relative;
+    padding: $p-1 0 $p-2_5 0;
+
+  }
+
+  .marketing-hero-wrapper{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1100px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .marketing-hero {
+    h2 {
+      @include font-title-extreme($color-white);
+    }
+  }
+
+}
+
+
+
 
 @mixin flex-shit($direction:column, $justify:center){
 	display:flex;
@@ -5,15 +96,6 @@
 	justify-content: $justify;
 	align-items: center;
 	
-}
-.web-hero {
-  @include background-cover("../../../assets/img/hero/web/web.jpg");
-  h2 {
-    @include font-title-big($color-white);
-    line-height: 80px;
-    position: relative;
-    padding: $p-1 0 $p-2 0;
-  }
 }
 
 .marketing-hero {
