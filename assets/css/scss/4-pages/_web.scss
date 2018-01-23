@@ -188,6 +188,7 @@
 }
 
 .web-reverse {
+	overflow:hidden;
 	@media (min-width:$tablet)
 		{
 			display:flex;
