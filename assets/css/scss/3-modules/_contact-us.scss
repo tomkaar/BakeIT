@@ -2,14 +2,14 @@
   @include background-cover("../../../assets/img/hero/contact-2000.jpg");
   @include flex-center(row);
   position: relative;
-  padding: $p-1_5 $p-1_5 $p-3_5 $p-1_5;
+  @include rem(padding, $v1_5 $v1_5 $v3_5 $v1_5);
   text-align: center;
 
 
   h3 {
     @include font-title($color-white);
     position: relative;
-    padding: $p-2 0;
+    @include rem(padding, $v2 0);
     line-height: 60px;
     letter-spacing: 1.5px;
   }
@@ -25,11 +25,11 @@
 
 @media (min-width: $tablet) {
   .section-contact {
-    padding: $p-4 0 $p-5 0;
+    @include rem(padding, $v4 0 $v5 0);
     h3 {
       @include font-title-big($color-white);
+      @include rem(padding, $v4 0);
       line-height: 80px;
-      padding: $p-4 0;
 
     }
   }
