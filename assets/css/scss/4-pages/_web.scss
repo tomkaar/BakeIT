@@ -98,38 +98,12 @@
 	
 }
 
-.marketing-hero {
-  @include background-cover("../../../assets/img/hero/marketing/marketing.jpg");
-
-  h2 {
-    @include font-title-big($color-white);
-    line-height: 80px;
-    position: relative;
-
-    padding: $p-1 0 $p-2_5 0;
-
-  }
-}
-
-.branding-hero {
-  @include background-cover("../../../assets/img/hero/branding/branding.jpg");
-
-  h2 {
-    @include font-title-big($color-white);
-    line-height: 80px;
-    position: relative;
-
-    padding: $p-1 0 $p-2_5 0;
-
-  }
-}
-
 .web-section-title-red {
 	text-align: center;
 	background:$color-red;
 	width:100%;
 	position:relative;
-	padding:$p-1_5 0 $p-2-5 0;
+	padding:$p-2_5 0 $p-5 0;
 	
 	.web-skills-list{
 		padding-top: $p-3;
@@ -138,6 +112,7 @@
 		@include font-title($color-white);
 		line-height: 2.5rem;
 		padding: 2rem 0 1rem 0;
+		font-weight: 100;
 	}
 	p {
 		@include font-para($color-white);
@@ -146,33 +121,36 @@
 	li {
 		list-style:none;
 		line-height: 1.5rem;
-		padding:$p-0_5;
-		@include font-para($color-white);
+		padding:$p-0_5 $p-5;
+		@include font-title-small($color-white);
 	}
 	
 }
 
-	
+
 .web-section-title {
 	text-align: center;
 	background:$color-green;
 	width:100%;
 	position:relative;
-	
 	h2 {
 		@include font-title($color-white);
 		line-height: 2.5rem;
 		padding: 2rem 0 1rem 0;
+		font-weight:100;
 	}
 	p {
 		@include font-para($color-white);
 		padding: 0 0 2rem 0;
 	}
+	@media (min-width:$desktop){
+		padding: 2.5rem;
+	}
 }
 
 .web-section-item {
 	display:flex;
-	justify-content: center;
+	align-items: center;
 	.web-section-img {
 		.web-stairs {
 			width:100%;
@@ -182,12 +160,14 @@
 	}
 	
 	.web-section-text {
+		
 		height:auto;
 		padding:$p-2 $p-0_5 $p-0_5 $p-0_5;
 		background:$color-white;
 		
 		h2 {
 			@include font-title();
+			
 		}
 		p {
 			@include font-para();
@@ -197,10 +177,11 @@
 		
 		h3 {
 			@include font-title-medium();
+			font-weight: 100;
 		}
 		
 		@media (min-width:$tablet){
-		text-align: left;	
+		text-align: left;
 		}
 		
 	}
@@ -211,7 +192,7 @@
 		{
 			display:flex;
 			flex-direction:row-reverse;
-			justify-content: center;
+			justify-content: space-around;
 			text-align: right;
 			h2, p, h3 {
 		text-align:right;
@@ -220,3 +201,6 @@
 		}
 }
 
+.web-information {
+	margin:0 0 $m-4 0;
+}
