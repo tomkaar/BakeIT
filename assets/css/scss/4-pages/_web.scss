@@ -103,7 +103,7 @@
 	background:$color-red;
 	width:100%;
 	position:relative;
-	padding:$p-2_5 0 $p-5 0;
+	padding:$p-2_5 0 $p-2_5 0;
 	
 	.web-skills-list{
 		padding-top: $p-3;
@@ -136,7 +136,7 @@
 	h2 {
 		@include font-title($color-white);
 		line-height: 2.5rem;
-		padding: 2rem 0 1rem 0;
+		padding: 2rem 0 2rem 0;
 		font-weight:100;
 	}
 	p {
@@ -144,7 +144,7 @@
 		padding: 0 0 2rem 0;
 	}
 	@media (min-width:$desktop){
-		padding: 2.5rem;
+		padding: 0rem;
 	}
 }
 
@@ -155,14 +155,14 @@
 		.web-stairs {
 			width:100%;
 			height:auto;
-			padding:$p-2_5 $p-1_5 $p-0_5 $p-1_5 ;
+			padding:$p-2_5 $p-1_5 $p-2_5 $p-1_5 ;
 		}
 	}
 	
 	.web-section-text {
 		
 		height:auto;
-		padding:$p-2 $p-0_5 $p-0_5 $p-0_5;
+		padding:$p-2 $p-0_5 $p-2_5 $p-0_5;
 		background:$color-white;
 		
 		h2 {
@@ -203,5 +203,6 @@
 }
 
 .web-information {
-	margin:0 0 $m-4 0;
+	margin:0 auto $m-4 auto;
+	
 }
