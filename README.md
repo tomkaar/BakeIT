@@ -1,5 +1,11 @@
 # BakeIT
+Brandon Tsegai, Cecilia Karlsson & Tommy Kärnström
+Repostory link
+Github Pages Link
+Trello Link
 
+
+### Arbetsmetod
 
 ### Krav
 - [x] Mobile First
@@ -9,7 +15,7 @@
 - [x] Flexbox
 - [x] Meny
 - [x] Mobil Webbläsare
-- [ ] Relativa måttenheter
+- [x] Relativa måttenheter
 - [ ] Tillgänglighetsanpassad
 - [ ] Korrekt indentering
 - [ ] IE8

@@ -13,15 +13,18 @@
   overflow: auto;
 
   h1 {
-    @include font-nav();
+    @include font-title-medium();
+    font-weight: 100;
+    line-height: 25px;
+    letter-spacing: 0.5px;
     float: left;
-    padding: 3px 0 0 16px;
+    padding: 0px 0 0 16px;
   }
   img{
     position: relative;
-    top: 10px;
+    top: 13px;
     float: left;
-    @include rem(width, $v2_5);
+    @include rem(width, 2.2);
   }
 
   @include desktop{
