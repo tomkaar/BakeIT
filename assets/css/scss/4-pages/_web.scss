@@ -1,138 +1,170 @@
-.web-hero, .branding-hero, .marketing-hero {
+.web-hero {
+  @include background-cover("../../../assets/img/hero/web/web-2000.jpg");
   position: relative;
   text-align: center;
-	@include rem(padding, 3.75+$v4 $v2_5 $v5 $v1_5);
-
+    @include rem(padding, 3.75+$v4 $v2_5 $v5 $v1_5);
   h2 {
     @include font-title($color-white);
     line-height: 80px;
     position: relative;
-	   @include rem(padding, $v1 0 $v2_5 0);
+       @include rem(padding, $v1 0 $v2_5 0);
   }
-
-  &-wrapper {
+  .web-hero-wrapper{
     margin: 0 auto;
     width: 100%;
     max-width: 1100px;
   }
 }
-
-
-
-.web-hero {
-	@include background-cover("../../../assets/img/hero/web/web-2000.jpg");
-}
-
-.branding-hero {
-	  @include background-cover("../../../assets/img/hero/branding/branding-2000.jpg");
-}
-
-.marketing-hero {
-	  @include background-cover("../../../assets/img/hero/marketing/marketing-2000.jpg");
-}
-
-.web-section-title-red {
-	text-align: center;
-	background:$color-red;
-	width:100%;
-	position:relative;
-	@include rem(padding, $v2_5 0 $v2_5 0);
-
-	.web-skills-list{
-		@include rem(padding, $v3 0 0 0);
-	}
-	h2 {
-		@include font-title($color-white);
-		font-weight: 100;
-		@include rem(padding, $v2 0 $v1 0);
-		@include rem(line-height, $v2_5)
-	}
-	p {
-		@include font-para($color-white);
-		@include rem(padding, 0 0 $v2 0);
-	}
-	li {
-		list-style:none;
-		@include font-title-small($color-white);
-		@include rem(padding, $v0_5 $v5);
-    @include rem(line-height, 1.5);
-	}
-
-}
-
-
-.web-section-title {
-	text-align: center;
-	background:$color-green;
-	width:100%;
-	position:relative;
-	h2 {
-		@include font-title($color-white);
-		font-weight:100;
-		@include rem(padding, $v2_5);
-    @include rem(line-height, $v2_5);
-	}
-	p {
-		@include font-para($color-white);
-		@include rem(padding, 0 0 $v2 0);
-	}
-	@media (min-width:$desktop){
-		padding: 0;
-	}
-}
-
-.web-section-item {
-	align-items: center;
-	justify-content: space-around;
-	.web-section-img {
-		.web-stairs {
-			width:100%;
-			height:auto;
-			@include rem(padding, $v2_5 $v1_5);
-		}
-	}
-
-	.web-section-text {
-		height: auto;
-		background: $color-white;
-		@include rem(padding, $v2 $v0_5 $v2_5 $v0_5);
-
-		h2 {@include font-title();}
-		
-		p {@include font-para();}
-		
-		h3 {
-			@include font-title-medium();
-			font-weight: 100;
-		}
-	}
-}
-
-.web-reverse {
-	overflow:hidden;}
-
-.web-information {
-	@include rem(margin, 0 auto $v4 auto);
-	width:100%;}
-
 @media (min-width: $desktop) {
-  .web-hero, .branding-hero, .marketing-hero {
+  .web-hero {
     h2 {
       @include font-title-extreme($color-white);
     }
   }
-
 }
-
-@media (min-width: $tablet){
-	.web-section-item .web-section-text {
-		text-align:left;
-	}
-	.web-reverse {
-			flex-direction:row-reverse;
-			justify-content: space-around;
-			h2, p, h3 {
-    		text-align:right;
-    	}
-	}
+.branding-hero {
+  @include background-cover("../../../assets/img/hero/branding/branding-2000.jpg");
+  position: relative;
+  text-align: center;
+    @include rem(padding, 3.75+$v4 $v2_5 $v5 $v1_5);
+  h2 {
+    @include font-title($color-white);
+    line-height: 80px;
+    position: relative;
+      @include rem(padding, $v1 0 $v2_5 0);
+  }
+  .branding-hero-wrapper{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1100px;
+  }
+}
+@media (min-width:$desktop) {
+  .branding-hero {
+    h2 {
+      @include font-title-extreme($color-white);
+    }
+  }
+}
+.marketing-hero {
+  @include background-cover("../../../assets/img/hero/marketing/marketing-2000.jpg");
+  position: relative;
+  text-align: center;
+    @include rem(padding, 3.75+$v4 $v2_5 $v5 $v1_5);
+  h2 {
+    @include font-title($color-white);
+    line-height: 80px;
+    position: relative;
+      @include rem(padding, $v1 0 $v2_5 0);
+  }
+  .marketing-hero-wrapper{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1100px;
+  }
+}
+@media (min-width: $desktop) {
+  .marketing-hero {
+    h2 {
+      @include font-title-extreme($color-white);
+    }
+  }
+}
+@mixin flex-shit($direction:column, $justify:center){
+    display:flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: center;
+}
+.web-section-title-red {
+    text-align: center;
+    background:$color-red;
+    width:100%;
+    position:relative;
+    @include rem(padding, $v2_5 0 $v2_5 0);
+    .web-skills-list{
+        @include rem(padding, $v3 0 0 0);
+    }
+    h2 {
+        @include font-title($color-white);
+        font-weight: 100;
+        @include rem(padding, $v2 0 $v1 0);
+        @include rem(line-height, $v2_5)
+    }
+    p {
+        @include font-para($color-white);
+        @include rem(padding, 0 0 $v2 0);
+    }
+    li {
+        list-style:none;
+        @include font-title-small($color-white);
+        @include rem(padding, $v0_5 $v5);
+    @include rem(line-height, 1.5);
+    }
+}
+.web-section-title {
+    text-align: center;
+    background:$color-green;
+    width:100%;
+    position:relative;
+    h2 {
+        @include font-title($color-white);
+        font-weight:100;
+        @include rem(padding, $v2_5);
+    @include rem(line-height, $v2_5);
+    }
+    p {
+        @include font-para($color-white);
+        @include rem(padding, 0 0 $v2 0);
+    }
+    @media (min-width:$desktop){
+        padding: 0;
+    }
+}
+.web-section-item {
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    .web-section-img {
+        .web-stairs {
+            width:100%;
+            height:auto;
+            @include rem(padding, $v2_5 $v1_5);
+        }
+    }
+    .web-section-text {
+        height: auto;
+        background: $color-white;
+        @include rem(padding, $v2 $v0_5 $v2_5 $v0_5);
+        h2 {
+            @include font-title();
+        }
+        p {
+            @include font-para();
+        }
+        h3 {
+            @include font-title-medium();
+            font-weight: 100;
+        }
+        @media (min-width:$tablet){
+        text-align: left;
+        }
+    }
+}
+.web-reverse {
+    overflow:hidden;
+    @media (min-width:$tablet)
+        {
+            display:flex;
+            flex-direction:row-reverse;
+            justify-content: space-around;
+            text-align: right;
+            h2, p, h3 {
+            text-align:right;
+        }
+        }
+}
+.web-information {
+    @include rem(margin, 0 auto $v4 auto);
+    width:100%;
 }
