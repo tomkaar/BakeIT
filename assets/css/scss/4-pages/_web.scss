@@ -3,12 +3,14 @@
   padding: 3.75rem + $p-4 $p-2_5 $p-5 $p-1_5;
   position: relative;
   text-align: center;
+	@include rem(padding, 3.75+$v4 $v2_5 $v5 $v1_5);
 
   h2 {
     @include font-title($color-white);
     line-height: 80px;
     position: relative;
     padding: $p-1 0 $p-2_5 0;
+	@include rem(padding, $v1 0 $v2_5 0);
 	
 
   }
@@ -34,12 +36,14 @@
   padding: 3.75rem + $p-4 $p-2_5 $p-5 $p-1_5;
   position: relative;
   text-align: center;
+	@include rem(padding, 3.75+$v4 $v2_5 $v5 $v1_5);
 
   h2 {
     @include font-title($color-white);
     line-height: 80px;
     position: relative;
     padding: $p-1 0 $p-2_5 0;
+	  @include rem(padding, $v1 0 $v2_5 0);
   }
 
   .branding-hero-wrapper{
@@ -62,12 +66,14 @@
   padding: 3.75rem + $p-4 $p-2_5 $p-5 $p-1_5;
   position: relative;
   text-align: center;
+	@include rem(padding, 3.75+$v4 $v2_5 $v5 $v1_5);
 
   h2 {
     @include font-title($color-white);
     line-height: 80px;
     position: relative;
     padding: $p-1 0 $p-2_5 0;
+	  @include rem(padding, $v1 0 $v2_5 0);
 
   }
 
@@ -104,25 +110,31 @@
 	width:100%;
 	position:relative;
 	padding:$p-2_5 0 $p-2_5 0;
+	@include rem(padding, $v2_5 0 $v2_5 0);
 	
 	.web-skills-list{
 		padding: $p-3 0 0 0;
+		@include rem(padding, $v3 0 0 0);
 	}
 	h2 {
 		@include font-title($color-white);
 		line-height: 2.5rem;
 		padding: 2rem 0 1rem 0;
 		font-weight: 100;
+		@include rem(padding, $v2 0 $v1 0);
+		@include rem(line-height, $v2_5)
 	}
 	p {
 		@include font-para($color-white);
 		padding: 0 0 $p-2 0;
+		@include rem(padding, 0 0 $v2 0);
 	}
 	li {
 		list-style:none;
 		line-height: 1.5rem;
 		padding:$p-0_5 $p-5;
 		@include font-title-small($color-white);
+		@include rem(padding, $v0_5 $v5);
 	}
 	
 }
@@ -138,13 +150,16 @@
 		line-height: 2.5rem;
 		padding: 2rem 0 2rem 0;
 		font-weight:100;
+		@include rem(line-height, $v2_5);
 	}
 	p {
 		@include font-para($color-white);
-		padding: 0 0 2rem 0;
+		padding: 0 0 $p-2 0;
+		@include rem(padding, 0 0 $v2 0);
 	}
 	@media (min-width:$desktop){
-		padding: 0rem;
+		padding: 0;
+		@include rem(padding, 0);
 	}
 }
 
@@ -156,7 +171,8 @@
 		.web-stairs {
 			width:100%;
 			height:auto;
-			padding:$p-2_5 $p-1_5 $p-2_5 $p-1_5 ;
+			padding:$p-2_5 $p-1_5;
+			@include rem(padding, $v2_5 $v1_5);
 		}
 	}
 	
@@ -165,6 +181,7 @@
 		height:auto;
 		padding:$p-2 $p-0_5 $p-2_5 $p-0_5;
 		background:$color-white;
+		@include rem(padding, $v2 $v0_5 $v2_5 $v0_5);
 		
 		h2 {
 			@include font-title();
@@ -205,5 +222,7 @@
 
 .web-information {
 	margin:0 auto $m-4 auto;
+	@include rem(margin, 0 auto $v4 auto);
+	width:100%;
 	
 }
