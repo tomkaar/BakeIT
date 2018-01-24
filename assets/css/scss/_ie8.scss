@@ -91,3 +91,40 @@
 
 
 // web
+.web-hero h2,
+.marketing-hero h2,
+.branding-hero h2{
+  font-size: 80px;
+}
+.web-information{
+  width: 100%;
+}
+  .web-section-item .col-m-2{
+    width: 50%;
+  }
+  .web-section-item .col-m-3{
+    width: 50%;
+  }
+
+  .web-section-text{
+    text-align: left;
+
+    h3{
+      padding: 80px 0 0 0;
+    }
+  }
+
+  .web-skills-list ul{
+    width: 50%;
+  }
+
+
+
+
+
+
+// Contact
+
+.contact-form .col-m-2{
+  width: 50%;
+}

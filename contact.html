@@ -74,18 +74,20 @@
 
 <section class="adress row">
   <div class="adress-pad">
-    <div class="col-s-1">
-        <h2>ADRESS</h2>
-        <p>The Shard, top floor office </p>
-        <p>32 London Bridge St, London SE1 9SG, UK</p>
-    </div>
-    <div class="col-s-1 col-m-2">
-        <h2>EMAIL</h2>
-        <p>info@bakeit.co.uk</p>
-    </div>
-    <div class="col-s-1 col-m-2">
-        <h2>TELEPHONE</h2>
-        <p><a href="tel:020-3826-2394">(020) 3826 2394</a></p>
+    <div class="wrapper">
+      <div class="col-s-1">
+          <h2>ADRESS</h2>
+          <p>The Shard, top floor office </p>
+          <p>32 London Bridge St, London SE1 9SG, UK</p>
+      </div>
+      <div class="col-s-1 col-m-2">
+          <h2>EMAIL</h2>
+          <p>info@bakeit.co.uk</p>
+      </div>
+      <div class="col-s-1 col-m-2">
+          <h2>TELEPHONE</h2>
+          <p><a href="tel:020-3826-2394">(020) 3826 2394</a></p>
+      </div>
     </div>
   </div>
 </section>
@@ -94,7 +96,7 @@
   <h2>SEND US A MESSAGE</h2>
 <!-- Name, email, number, company, message-->
   <div class="col-s-1">
-    <form>
+    <form class="wrapper-small">
       <div class="col-s-1 col-m-2">
         <label for="cName">Name</label>
         <input type="text" name="name" id="cName">
@@ -107,7 +109,7 @@
         <label for="cCompany">Company</label>
         <input type="text" name="company" id="cCompany">
       </div>
-      <div class="col-s-1">
+      <div class="padding-textarea col-s-1">
         <label for="cMsg">Message</label>
         <textarea name="message" id="cMsg"></textarea>
         <input type="button" value="SUBMIT MESSAGE">

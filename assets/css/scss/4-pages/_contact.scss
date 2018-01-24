@@ -72,6 +72,10 @@
   width: 100%;
   height: auto;
 
+  .padding-textarea{
+    @include rem(padding, 1);
+  }
+
   h2 {
     @include font-title($color-black);
     @include rem(padding, $v2 0);
@@ -104,7 +108,7 @@
   textarea {
     display: block;
     width: 100%;
-    max-width: 600px;
+    // max-width: 600px;
     margin: 0 auto;
     height: 8rem;
     height: 128px;

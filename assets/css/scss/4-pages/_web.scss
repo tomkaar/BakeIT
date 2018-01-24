@@ -1,6 +1,5 @@
 .web-hero {
   @include background-cover("../../../assets/img/hero/web/web-2000.jpg");
-  padding: 3.75rem + $p-4 $p-2_5 $p-5 $p-1_5;
   position: relative;
   text-align: center;
 	@include rem(padding, 3.75+$v4 $v2_5 $v5 $v1_5);
@@ -9,10 +8,7 @@
     @include font-title($color-white);
     line-height: 80px;
     position: relative;
-    padding: $p-1 0 $p-2_5 0;
-	@include rem(padding, $v1 0 $v2_5 0);
-	
-
+	   @include rem(padding, $v1 0 $v2_5 0);
   }
 
   .web-hero-wrapper{
@@ -33,7 +29,6 @@
 
 .branding-hero {
   @include background-cover("../../../assets/img/hero/branding/branding-2000.jpg");
-  padding: 3.75rem + $p-4 $p-2_5 $p-5 $p-1_5;
   position: relative;
   text-align: center;
 	@include rem(padding, 3.75+$v4 $v2_5 $v5 $v1_5);
@@ -42,7 +37,6 @@
     @include font-title($color-white);
     line-height: 80px;
     position: relative;
-    padding: $p-1 0 $p-2_5 0;
 	  @include rem(padding, $v1 0 $v2_5 0);
   }
 
@@ -63,7 +57,6 @@
 
 .marketing-hero {
   @include background-cover("../../../assets/img/hero/marketing/marketing-2000.jpg");
-  padding: 3.75rem + $p-4 $p-2_5 $p-5 $p-1_5;
   position: relative;
   text-align: center;
 	@include rem(padding, 3.75+$v4 $v2_5 $v5 $v1_5);
@@ -72,7 +65,6 @@
     @include font-title($color-white);
     line-height: 80px;
     position: relative;
-    padding: $p-1 0 $p-2_5 0;
 	  @include rem(padding, $v1 0 $v2_5 0);
 
   }
@@ -101,7 +93,7 @@
 	flex-direction: $direction;
 	justify-content: $justify;
 	align-items: center;
-	
+
 }
 
 .web-section-title-red {
@@ -109,34 +101,28 @@
 	background:$color-red;
 	width:100%;
 	position:relative;
-	padding:$p-2_5 0 $p-2_5 0;
 	@include rem(padding, $v2_5 0 $v2_5 0);
-	
+
 	.web-skills-list{
-		padding: $p-3 0 0 0;
 		@include rem(padding, $v3 0 0 0);
 	}
 	h2 {
 		@include font-title($color-white);
-		line-height: 2.5rem;
-		padding: 2rem 0 1rem 0;
 		font-weight: 100;
 		@include rem(padding, $v2 0 $v1 0);
 		@include rem(line-height, $v2_5)
 	}
 	p {
 		@include font-para($color-white);
-		padding: 0 0 $p-2 0;
 		@include rem(padding, 0 0 $v2 0);
 	}
 	li {
 		list-style:none;
-		line-height: 1.5rem;
-		padding:$p-0_5 $p-5;
 		@include font-title-small($color-white);
 		@include rem(padding, $v0_5 $v5);
+    @include rem(line-height, 1.5);
 	}
-	
+
 }
 
 
@@ -147,19 +133,16 @@
 	position:relative;
 	h2 {
 		@include font-title($color-white);
-		line-height: 2.5rem;
-		padding: 2rem 0 2rem 0;
 		font-weight:100;
-		@include rem(line-height, $v2_5);
+		@include rem(padding, $v2_5);
+    @include rem(line-height, $v2_5);
 	}
 	p {
 		@include font-para($color-white);
-		padding: 0 0 $p-2 0;
 		@include rem(padding, 0 0 $v2 0);
 	}
 	@media (min-width:$desktop){
 		padding: 0;
-		@include rem(padding, 0);
 	}
 }
 
@@ -171,37 +154,34 @@
 		.web-stairs {
 			width:100%;
 			height:auto;
-			padding:$p-2_5 $p-1_5;
 			@include rem(padding, $v2_5 $v1_5);
 		}
 	}
-	
+
 	.web-section-text {
-		
-		height:auto;
-		padding:$p-2 $p-0_5 $p-2_5 $p-0_5;
-		background:$color-white;
+		height: auto;
+		background: $color-white;
 		@include rem(padding, $v2 $v0_5 $v2_5 $v0_5);
-		
+
 		h2 {
 			@include font-title();
-			
+
 		}
 		p {
 			@include font-para();
-	
-				
+
+
 		}
-		
+
 		h3 {
 			@include font-title-medium();
 			font-weight: 100;
 		}
-		
+
 		@media (min-width:$tablet){
 		text-align: left;
 		}
-		
+
 	}
 }
 
@@ -214,15 +194,14 @@
 			justify-content: space-around;
 			text-align: right;
 			h2, p, h3 {
-		text-align:right;
-	}	
-			
+    		text-align:right;
+    	}
+
 		}
 }
 
 .web-information {
-	margin:0 auto $m-4 auto;
 	@include rem(margin, 0 auto $v4 auto);
 	width:100%;
-	
+
 }
