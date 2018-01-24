@@ -26,6 +26,13 @@
     float: left;
     @include rem(width, 2.2);
   }
+  svg{
+    float: left;
+    position: relative;
+    top: 13px;
+    width: 35px;
+    height: 35px;
+  }
 
   @include desktop{
     @include rem(left, $v2);
