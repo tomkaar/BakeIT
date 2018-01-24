@@ -1,7 +1,7 @@
 # BakeIT
-Brandon Tsegai, Cecilia Karlsson & Tommy Kärnström
-Repostory link
-Github Pages Link
+Brandon Tsegai, Cecilia Karlsson & Tommy Kärnström<br>
+Repostory link<br>
+Github Pages Link<br>
 Trello Link
 
 
