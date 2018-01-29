@@ -24,7 +24,9 @@ Med god kommunikation och stor tid som spenderades att koda sida vid sida finns 
 
 Tydligt strukturerad kod bidrog till att problemlösning blev enklare, då det lämnade oss med många verktyg att använda. Genom att ha tillgång till samma variabler och mixins är vår sida även lätt att underhålla då samtliga delar av den använder sig av samma styling, vilket innebär att man kan göra många ändringar på sidan med endast några få ändringar i den slutgiltiga CSS-koden.<br>
 
-Vi var även väldigt konsekventa med att ses och arbeta på projektet utan att låta alltför lång tid gå emellan våra gruppsessioner, och på så vis effektivisera tiden man jobbade på egen hand, då man inte behövde oroa sig för att alltför många ändringar ska ha gjorts utan ens kännedom.
+Vi var även väldigt konsekventa med att ses och arbeta på projektet utan att låta alltför lång tid gå emellan våra gruppsessioner, och på så vis effektivisera tiden man jobbade på egen hand, då man inte behövde oroa sig för att alltför många ändringar ska ha gjorts utan ens kännedom.<br>
+
+Däremot var processen inte helt felfri. Bristande kunskaper inom git och versionshantering ledde till att vi stötte på en hel del problem i början av arbetet. Med hjälp av vår lärare samt google fick vi till slut kläm på det, men detta bromsade dock ner arbetet en del.
 
 ## IE8 Screenshot
 ![Bake IT IE8](./other/bakeitIE8.png)
