@@ -28,6 +28,10 @@ Vi var även väldigt konsekventa med att ses och arbeta på projektet utan att 
 
 Däremot var processen inte helt felfri. Bristande kunskaper inom git och versionshantering ledde till att vi stötte på en hel del problem i början av arbetet. Med hjälp av vår lärare samt google fick vi till slut kläm på det, men detta bromsade dock ner arbetet en del.
 
+## Tillgänglighetsanpassad
+
+
+
 ## IE8 Screenshot
 ![Bake IT IE8](./other/bakeitIE8.png)
 
@@ -43,5 +47,5 @@ Däremot var processen inte helt felfri. Bristande kunskaper inom git och versio
 - [x] Relativa måttenheter
 - [x] Korrekt indentering
 - [x] IE8
-- [ ] Tillgänglighetsanpassad
 - [x] GitHub Pages
+- [ ] Tillgänglighetsanpassad
