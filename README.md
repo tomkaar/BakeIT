@@ -16,7 +16,7 @@ Trello Link
 - [x] Meny
 - [x] Mobil Webbläsare
 - [x] Relativa måttenheter
+- [x] Korrekt indentering
+- [x] IE8
 - [ ] Tillgänglighetsanpassad
-- [ ] Korrekt indentering
-- [ ] IE8
 - [ ] GitHub Pages
