@@ -42,4 +42,4 @@ Vi var även väldigt konsekventa med att ses och arbeta på projektet utan att 
 - [x] Korrekt indentering
 - [x] IE8
 - [ ] Tillgänglighetsanpassad
-- [ ] GitHub Pages
+- [x] GitHub Pages

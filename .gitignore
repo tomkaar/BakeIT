@@ -1,8 +1,6 @@
 *.sass-cache/
-assets/css/css/
 *.css.map
 *.map
-*.css
 *.DS_Store
 .DS_Store
 *.config
