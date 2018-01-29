@@ -1,7 +1,7 @@
 # BakeIT
 Brandon Tsegai, Cecilia Karlsson & Tommy Kärnström<br>
 Repostory [link](https://github.com/tomkaar/BakeIT)<br>
-Github Pages [Link]()<br>
+Github Pages [Link](https://tomkaar.github.io/BakeIT/)<br>
 Trello [Link](https://trello.com/b/I8tPOZPr/bakeit)
 
 
